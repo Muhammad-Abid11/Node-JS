@@ -18,18 +18,37 @@ console.log("Hello Node") //Type in terminal --> "node index.js"
 // video 5  Core Modules// extra library to strong it
 
 
+
+// -------------x---------------
+
 const fs = require("fs") //require k ander "" me dyna Core Modules k name 
 // create new file
 fs.writeFileSync("read.txt", "Hello G by Node")
-//                  fileName, Jo Data insert krna hai
+//              (fileName, Jo Data insert krna hai)
 //now again type in terminal "node index.js"
 // ye file create kryga or hogi to update krdyga 
 
-fs.appendFileSync("read.txt", " Add New Data") // add new data
+fs.appendFileSync("read.txt", " Add New Dataaaas") // add new data
 //now run terminal again type in terminal "node index.js"
+
+// -------------x---------------
+
 
 const buf_data = fs.readFileSync("read.txt");
 // console.log(buf_data); //ye apko burffer data dy jo JS/Browser me nhi hota 
 const strData = buf_data.toString();
 console.log(strData);
 // now run terminal
+
+// -------------x---------------
+//rename file Name
+
+fs.renameSync("read.txt", "readWrite.txt")
+
+
+// yhn upper sy hoty hoa ayen too
+// 1st wo file bana rha hai read.txt or usme kuch data hai
+// 2nd usme new data insert krdiya or phir
+// 3rd us file k name kr k readWrite krdiya
+// isy ap reRun bhi krengy tb bhi ye error nhi dyga k read.txt khn hai
+// ? Q us time wo phir 1 new file banayega or cycle start hojayega
