@@ -21,5 +21,9 @@ console.log("Hello Node") //Type in terminal --> "node index.js"
 const fs = require("fs") //require k ander "" me dyna Core Modules k name 
 // create new file
 fs.writeFileSync("read.txt", "Hello G by Node")
-
+//                  fileName, Jo Data insert krna hai
+//now again type in terminal "node index.js"
 // ye file create kryga or hogi to update krdyga 
+
+fs.appendFileSync("read.txt", " Add New Data") // add new data 
+//now again type in terminal "node index.js"
