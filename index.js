@@ -21,8 +21,9 @@ console.log("Hello Node") //Type in terminal --> "node index.js"
 
 // -------------x---------------
 
-const fs = require("fs") //require k ander "" me dyna Core Modules k name 
+const fs = require("fs") //require k ander "" me dyna Core Modules k name
 // create new file
+// fs.mkdirSync("NewFolder"); //create new folder
 fs.writeFileSync("read.txt", "Hello G by Node")
 //              (fileName, Jo Data insert krna hai)
 //now again type in terminal "node index.js"
@@ -52,3 +53,18 @@ fs.renameSync("read.txt", "readWrite.txt")
 // 3rd us file k name kr k readWrite krdiya
 // isy ap reRun bhi krengy tb bhi ye error nhi dyga k read.txt khn hai
 // ? Q us time wo phir 1 new file banayega or cycle start hojayega
+
+// -------------x---------------
+
+// video 6 CRUD operation
+
+
+// fs.mkdirSync("NewCRUD");// its show error that folder exist when you run it 2nd times so comment after create folder
+// fs.writeFileSync("NewCRUD/crub.txt", " Hello CRUB From index.js");
+// fs.appendFileSync("NewCRUD/crub.txt", " add new data 😍  ")
+// const strData2 = fs.readFileSync("NewCRUD/crub.txt", "utf8") //utf8 sy wo buffer ko string me change kr rha hai
+// console.log(strData2)
+// fs.renameSync("NewCRUD/crub.txt", "NewCRUD/Mycrub.txt") // rename
+// fs.unlinkSync("NewCRUD/Mycrub.txt")  //delete file
+// fs.rmdirSync("NewCRUD")  //delete Folder
+// run terminal
