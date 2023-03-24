@@ -25,5 +25,11 @@ fs.writeFileSync("read.txt", "Hello G by Node")
 //now again type in terminal "node index.js"
 // ye file create kryga or hogi to update krdyga 
 
-fs.appendFileSync("read.txt", " Add New Data") // add new data 
-//now again type in terminal "node index.js"
+fs.appendFileSync("read.txt", " Add New Data") // add new data
+//now run terminal again type in terminal "node index.js"
+
+const buf_data = fs.readFileSync("read.txt");
+// console.log(buf_data); //ye apko burffer data dy jo JS/Browser me nhi hota 
+const strData = buf_data.toString();
+console.log(strData);
+// now run terminal
