@@ -1,0 +1,15 @@
+node -v
+
+v4
+
+REPL	like CMD in windows
+R Read
+E Take and evaluates the data structure
+P print
+L loop the above command 
+
+commands.
+mkdir	folderName
+cd	folderName
+
+start REPL in terminal by type just "node " in terminal
