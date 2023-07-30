@@ -26,7 +26,8 @@ configure your package.json to indicate that your module uses the ES module form
 Here's how you can resolve the issue:
 Use the.mjs extension:
 // Rename your index.js file to index.mjs, and then run the code with the following command
-node index.js
+
+node index.mjs
 */
 
 import valid from 'validator';  //ES Version
