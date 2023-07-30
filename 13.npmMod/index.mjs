@@ -5,6 +5,16 @@
 
 // -------------xx---------------------
 
+/* 
+
+const chalk = require('chalk');
+console.log(chalk.blue('Hello world!'));
+ye is trha import pe error dy rha hai 
+
+*/
+
+// -------------xx---------------------
+
 import chalk from 'chalk';  //ES Version
 console.log(chalk.bgYellow('Hello world!'));
 /*
@@ -19,13 +29,10 @@ Use the.mjs extension:
 node index.js
 */
 
+import valid from 'validator';  //ES Version
 
-// -------------xx---------------------
+const res = valid.isEmail("abid@gmail.com")
+console.log(`the given email is --> ${res}`);
+console.log(res ? chalk.green.inverse(res) : chalk.red.inverse(res));
 
-/* 
 
-const chalk = require('chalk');
-console.log(chalk.blue('Hello world!'));
-ye is trha import pe error dy rha hai 
-
-*/
