@@ -22,12 +22,14 @@ server.on("request", (req, res) => {
     });
 });
 
-server.listen(8000, "localhost");
+server.listen(8000, "localhost", (err) => {
+    console.log("Server is up at port 8000")
+});
 
 
 
 // -------------X-----------
-    // Both are same difference is line 3 down
+// Both are same difference is line 3 down
 
 /* 
 
@@ -48,7 +50,9 @@ const server = http.createServer((req, res) => {
     });
 
 
-server.listen(8000, "localhost");
+server.listen(8000, "localhost", (err) => {
+    console.log("Server is up at port 8000")
+});
 
 
  */

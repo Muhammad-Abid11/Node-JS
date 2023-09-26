@@ -36,4 +36,12 @@ const res = valid.isEmail("abid@gmail.com")
 console.log(`the given email is --> ${res}`);
 console.log(res ? chalk.green.inverse(res) : chalk.red.inverse(res));
 
+// Video 14 Nodemon
+
+// npm i nodemon -g     (it re-render code when any changes saved)
+// nodemon -v
+// nodemon index.js     (in terminal to run nodemon)
+// ctrl+C               (to exit nodemon )
+
+
 

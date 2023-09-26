@@ -4,9 +4,8 @@
 // " pipe "k through access ho ja rha hai. 
 const fs = require("fs")
 const http = require("http");
-const StreamData = fs.createReadStream("input.txt")//jis file ki stream krne hai uska name
-
 const server = http.createServer((req, res) => {
+    const StreamData = fs.createReadStream("input.txt")//jis file ki stream krne hai uska name
     StreamData.pipe(res); //pipe k through " StreamData " k data " res " me send krdo
 })
 server.listen(8000, "localhost", () => {

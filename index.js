@@ -41,6 +41,11 @@ const strData = buf_data.toString();
 console.log(strData);
 // now run terminal
 
+//                  OR
+
+// const buf_data = fs.readFileSync("read.txt", "UTF-8");
+// console.log(buf_data);
+
 // -------------x---------------
 //rename file Name
 
