@@ -1,5 +1,6 @@
 // video 12
-const add = require("./oper")
+const fs = require("fs")//default modules not required path 
+const add = require("./oper")//path "./"
 const multiOperator = require("./multiOpera");
 const { name } = require("./multiOpera");
 // multiOperator ko hum destructor kr k us ki property direct access kr sakty hen because its a object

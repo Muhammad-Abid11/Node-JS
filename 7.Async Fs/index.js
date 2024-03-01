@@ -1,4 +1,5 @@
-// video 7
+//-- video 7 Async File System
+// Callback Must be given,it calls when the work is to be done
 
 const fs = require("fs");
 fs.writeFile("NewFile.txt", "Hello by Async", (err) => {
@@ -10,8 +11,5 @@ fs.appendFile("NewFile.txt", " New Data added", (err) => {
 fs.readFile("NewFile.txt", "utf-8", (err, data) => {
     console.log("Data Read-->", data)
 })
-
-
-// video 8 Async VS Sync
 
 // video 9 Challenge

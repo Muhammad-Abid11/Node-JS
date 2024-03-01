@@ -13,10 +13,8 @@ const server = http.createServer((req, res) => {
     if (req.url == "/contact") {
         res.end("<h1>Hello contact now check  About OR 1-Page sy root page pe jaogy too server crash</h1>")
     } else {
-        res.writeHead(404) //ye line upper hi rhy nichy hoga too error nhi btayega
+        res.writeHead(404) //ye line upper hi rhy nichy hoga too console me error nhi btayega
         res.end("<h1>404 page not found  OR 1-Page sy root page pe jaogy too server crash</h1>")
-        // laken ye status code 200, its means page load success
-        // jb k ye error hai to network me isy error dyna chahiye is liye
     }
 })
 
@@ -31,3 +29,7 @@ server.listen(8000, "localhost", () => {
 server.listen(8000, "127.0.0.1", () => {
     console.log("Server is up at port 8000")
 })
+
+
+//node index.js (for 1 time running)
+//nodemon index.js (for continue running)
